@@ -1,0 +1,6 @@
+framework module Pods_STWGroupChainKit_Tests {
+  umbrella header "Pods-STWGroupChainKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

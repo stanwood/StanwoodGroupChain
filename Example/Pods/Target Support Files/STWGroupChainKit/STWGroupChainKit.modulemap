@@ -1,0 +1,6 @@
+framework module STWGroupChainKit {
+  umbrella header "STWGroupChainKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
