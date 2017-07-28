@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C9D2C63154362B1100ABF28E94DAEDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		6BECE52981FDFD43B53BF9A12095ABEC /* Pods-STWGroupChainKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A76E801B1825B6E619B81A38948E2C /* Pods-STWGroupChainKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CC8EDF91F2B1AE700976C2F /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC8EDE31F2B1AD300976C2F /* Handler.swift */; };
+		6CC8EDF91F2B1AE700976C2F /* SGCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC8EDE31F2B1AD300976C2F /* SGCHandler.swift */; };
 		6CC8EDFA1F2B1AE700976C2F /* SGCAbstractHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC8EDE41F2B1AD300976C2F /* SGCAbstractHandler.swift */; };
 		6CC8EDFB1F2B1AE700976C2F /* SGCChainType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC8EDE51F2B1AD300976C2F /* SGCChainType.swift */; };
 		6CC8EDFC1F2B1AE700976C2F /* SGCDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC8EDE61F2B1AD300976C2F /* SGCDefine.swift */; };
@@ -59,7 +59,7 @@
 		52363C22D3E06F2D0275D0203565F29F /* Pods-STWGroupChainKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STWGroupChainKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5D6098E27986C4501505B75D69DABF07 /* Pods-STWGroupChainKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-STWGroupChainKit_Tests.modulemap"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6CC8EDE31F2B1AD300976C2F /* Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
+		6CC8EDE31F2B1AD300976C2F /* SGCHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGCHandler.swift; sourceTree = "<group>"; };
 		6CC8EDE41F2B1AD300976C2F /* SGCAbstractHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGCAbstractHandler.swift; sourceTree = "<group>"; };
 		6CC8EDE51F2B1AD300976C2F /* SGCChainType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGCChainType.swift; sourceTree = "<group>"; };
 		6CC8EDE61F2B1AD300976C2F /* SGCDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGCDefine.swift; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		349D84351CD49D90CF3FA0678FAEAA16 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6CC8EDE31F2B1AD300976C2F /* Handler.swift */,
+				6CC8EDE31F2B1AD300976C2F /* SGCHandler.swift */,
 				6CC8EDE41F2B1AD300976C2F /* SGCAbstractHandler.swift */,
 				6CC8EDE51F2B1AD300976C2F /* SGCChainType.swift */,
 				6CC8EDE61F2B1AD300976C2F /* SGCDefine.swift */,
@@ -375,7 +375,7 @@
 				6CC8EDFD1F2B1AE700976C2F /* SGCError.swift in Sources */,
 				6CC8EDFA1F2B1AE700976C2F /* SGCAbstractHandler.swift in Sources */,
 				6CC8EE011F2B1AE700976C2F /* SGCResponseType.swift in Sources */,
-				6CC8EDF91F2B1AE700976C2F /* Handler.swift in Sources */,
+				6CC8EDF91F2B1AE700976C2F /* SGCHandler.swift in Sources */,
 				6CC8EDFE1F2B1AE700976C2F /* SGCHandlerType.swift in Sources */,
 				A865EF8C72C91DF2C84A83AA108D1D0E /* STWGroupChainKit-dummy.m in Sources */,
 				6CC8EDFB1F2B1AE700976C2F /* SGCChainType.swift in Sources */,

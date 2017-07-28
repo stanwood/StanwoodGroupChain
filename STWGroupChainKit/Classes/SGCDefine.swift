@@ -10,4 +10,4 @@ import Foundation
 
 public typealias SGCUserInfo = [String: Any]
 public typealias SGCBlock = (_ object: SGCObject)-> Void
-public typealias SGCResultComplition = Optional<((_ result: STWSGCResult<SGCResponse, SGCError>) -> Void)>
+public typealias SGCResultComplition = Optional<((_ result: SGCResult<SGCResponse, SGCError>) -> Void)>
