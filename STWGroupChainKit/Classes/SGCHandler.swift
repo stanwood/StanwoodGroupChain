@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - SGCHandler
 
-public struct SGCHandler: SGCObject {
+public struct SGCObject: SGCObjectType {
     
     // userInfo to hasnle any system notifications
     public  var userInfo: SGCUserInfo?

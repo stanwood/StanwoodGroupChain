@@ -1,5 +1,5 @@
 PODS:
-  - STWGroupChainKit (0.1.0)
+  - STWGroupChainKit (0.0.1)
 
 DEPENDENCIES:
   - STWGroupChainKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  STWGroupChainKit: 5b61a009657bb2d30b067942e51cca73e01cb70d
+  STWGroupChainKit: 0c0a3a62c430c97bb9d7ecf686f5ce371bcd891a
 
 PODFILE CHECKSUM: 6065f16be10b4267b1a173532646628068246ef0
 

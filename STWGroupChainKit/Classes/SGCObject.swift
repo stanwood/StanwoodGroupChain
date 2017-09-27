@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - Handler object protocol sets the object type
-public protocol SGCObject {
+public protocol SGCObjectType {
     var type: SGCType { get }
     var target: Any { get }
     var userInfo: SGCUserInfo? { get }

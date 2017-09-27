@@ -7,12 +7,37 @@
 //
 
 import UIKit
+import STWGroupChainKit
 
 class ViewController: UIViewController {
-
+    
+    var chain: SGCChain?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let handlers = [HandlerOne(), HandlerTwo(), HandlerThree(), HandlerFour()]
+        
+        chain = SGCChain(handlers: handlers)
+        
+        let vc = UIViewController()
+        
+        let sgcObject = SGCObject(type: .type(HandlerTwo.self), target: vc) { (result) in
+            
+        }
+        
+        chain?.handel(sgcObject)
+        
     }
 }
 
+class HandlerThree: SGCAbstractHandler {
+    override func execute(object: SGCObject) {
+        print(id)
+    }
+}
+
+class HandlerFour: SGCAbstractHandler {
+    override func execute(object: SGCObject) {
+        print(id)
+    }
+}
