@@ -33,7 +33,7 @@ public class SGCError: NSError {
     public init(userInfo: [SGCError.SGCErrorInfoKey : Any]) throws {
         
         // Converting CGSError userInfo to an NSError userInfo
-        var info: [AnyHashable : Any] = [:]
+        var info: [String : Any] = [:]
         for infoItem in userInfo {
             if infoItem.key == .NSLocalizedRecoveryOptionsErrorKey {
                 guard infoItem.value is [String] else { throw SGCError(message: "NSLocalizedRecoveryOptionsErrorKey must be an array of String") }
