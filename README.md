@@ -1,29 +1,31 @@
 # STWGroupChainKit
 
-[![CI Status](http://img.shields.io/travis/Tal Zion/STWGroupChainKit.svg?style=flat)](https://travis-ci.org/Tal Zion/STWGroupChainKit)
-[![Version](https://img.shields.io/cocoapods/v/STWGroupChainKit.svg?style=flat)](http://cocoapods.org/pods/STWGroupChainKit)
-[![License](https://img.shields.io/cocoapods/l/STWGroupChainKit.svg?style=flat)](http://cocoapods.org/pods/STWGroupChainKit)
-[![Platform](https://img.shields.io/cocoapods/p/STWGroupChainKit.svg?style=flat)](http://cocoapods.org/pods/STWGroupChainKit)
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+>WIP
+
 ## Requirements
+
+>WIP
 
 ## Installation
 
-STWGroupChainKit is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+>WIP Note: Will be added to Stanwood Xcode Template by default
 
 ```ruby
-pod "STWGroupChainKit"
+source 'https://github.com/stanwood/Cocoa_Pods_Specs.git'
+use_frameworks!
+
+pod 'STWGroupChainKit'
 ```
 
-## Author
+## Usage
 
-Tal Zion, talezion@gmail.com
+>WIP
+
 
 ## License
 
-STWGroupChainKit is available under the MIT license. See the LICENSE file for more info.
+StanwoodCore is a private lobrary. See the LICENSE file for more info.
