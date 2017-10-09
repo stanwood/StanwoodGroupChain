@@ -7,18 +7,25 @@
 //
 
 import UIKit
+import STWGroupChainKit
 
 class ViewController: UIViewController {
-
+    
+    var chain: SGCChain?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let handlers = [HandlerOne(), HandlerTwo(), HandlerThree(), HandlerFour(), HandlerFive(), HandlerSix()]
+        
+        chain = SGCChain(handlers: handlers)
+        
+        let vc = UIViewController()
+        
+        let sgcObject = SGCObject(type: .type(HandlerOne.self), target: vc) { (result) in
+            
+        }
+        
+        chain?.handel(sgcObject)
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
-

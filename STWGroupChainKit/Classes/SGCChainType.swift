@@ -8,16 +8,17 @@
 
 import Foundation
 
-protocol SGCChainType {
+public protocol SGCChainType {
     var initialHandler: SGCHandlerType? { get set }
     
     init(handlers: [SGCAbstractHandler])
+    func handel(_ type:SGCObject)
 }
 
 // MARK: - Starts the Grou Chain
 
 extension SGCChainType {
-    func handel(_ type:SGCObject) {
+    public func handel(_ type:SGCObject) {
         self.initialHandler?.handel(type)
     }
 }
