@@ -18,25 +18,36 @@ public class SGCError: NSError {
     }
     
     public enum SGCErrorInfoKey:String, CustomStringConvertible {
-        case NSLocalizedDescriptionKey
-        case NSLocalizedRecoverySuggestionErrorKey
-        case NSLocalizedFailureReasonErrorKey
-        case NSLocalizedRecoveryOptionsErrorKey
-        case NSRecoveryAttempterErrorKey
-        case NSHelpAnchorErrorKey
+        case NSLocalizedDescriptionKey = "NSLocalizedDescription"
+        case NSLocalizedRecoverySuggestionErrorKey = "NSLocalizedRecoverySuggestion"
+        case NSLocalizedFailureReasonErrorKey = "NSLocalizedFailureReason"
+        case NSLocalizedRecoveryOptionsErrorKey = "NSLocalizedRecoveryOptions"
+        case NSRecoveryAttempterErrorKey = "NSRecoveryAttempter"
+        case NSHelpAnchorErrorKey = "NSHelpAnchorError"
         
         public var description: String {
             return rawValue
         }
     }
     
-    public init(userInfo: [SGCErrorInfoKey: String]) {
-        super.init(domain: SGCErrorKey.domain, code: SGCErrorKey.errorCode, userInfo: userInfo)
+    public init(userInfo: [SGCError.SGCErrorInfoKey : Any]) throws {
+        
+        // Converting CGSError userInfo to an NSError userInfo
+        var info: [String : Any] = [:]
+        for infoItem in userInfo {
+            if infoItem.key == .NSLocalizedRecoveryOptionsErrorKey {
+                guard infoItem.value is [String] else { throw SGCError(message: "NSLocalizedRecoveryOptionsErrorKey must be an array of String") }
+            }
+            
+            info.updateValue(infoItem.value, forKey: infoItem.key.description)
+        }
+        
+        super.init(domain: SGCErrorKey.domain, code: SGCErrorKey.errorCode, userInfo: info)
     }
     
     convenience init(message: String) {
         let info = [SGCErrorInfoKey.NSLocalizedDescriptionKey: message]
-        self.init(userInfo: info)
+        try! self.init(userInfo: info)
     }
     
     public required init?(coder aDecoder: NSCoder) {
