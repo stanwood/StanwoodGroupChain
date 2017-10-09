@@ -15,16 +15,16 @@ open class SGCChain: SGCChainType {
         
         initialHandler = handlers.first
         
-        let count = handlers.count
-        
-        handlers.forEach { (handler) in
-            guard let firstIndex = handlers.index(of: handler), firstIndex != 0 else { return }
+        for (index, handler) in handlers.enumerated() {
+            guard index != handlers.startIndex else { continue }
             
-            guard handlers.last == handler else { return }
-            
-            if let s = handlers.index(of: handler) {
-                
+            if index == 1 {
+                initialHandler?.set(handler)
+                continue
             }
+            
+            let predecessor = handlers[index - 1]
+            predecessor.set(handler)
         }
     }
 }

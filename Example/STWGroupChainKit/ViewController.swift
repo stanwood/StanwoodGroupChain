@@ -15,29 +15,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let handlers = [HandlerOne(), HandlerTwo(), HandlerThree(), HandlerFour()]
+        let handlers = [HandlerOne(), HandlerTwo(), HandlerThree(), HandlerFour(), HandlerFive(), HandlerSix()]
         
         chain = SGCChain(handlers: handlers)
         
         let vc = UIViewController()
         
-        let sgcObject = SGCObject(type: .type(HandlerTwo.self), target: vc) { (result) in
+        let sgcObject = SGCObject(type: .type(HandlerOne.self), target: vc) { (result) in
             
         }
         
         chain?.handel(sgcObject)
         
-    }
-}
-
-class HandlerThree: SGCAbstractHandler {
-    override func execute(object: SGCObject) {
-        print(id)
-    }
-}
-
-class HandlerFour: SGCAbstractHandler {
-    override func execute(object: SGCObject) {
-        print(id)
     }
 }
