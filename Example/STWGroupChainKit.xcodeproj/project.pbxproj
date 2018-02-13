@@ -55,7 +55,7 @@
 		6CD3981C1F7BA530008AF8E1 /* HandlerOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandlerOne.swift; sourceTree = "<group>"; };
 		7354B0B69E36C719F424E86F /* Pods-STWGroupChainKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STWGroupChainKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-STWGroupChainKit_Tests/Pods-STWGroupChainKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9A86911412E11EDEBD75061F /* Pods-STWGroupChainKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STWGroupChainKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STWGroupChainKit_Example/Pods-STWGroupChainKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AA947435AECBB338DBE3DAC8 /* STWGroupChainKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = STWGroupChainKit.podspec; path = ../STWGroupChainKit.podspec; sourceTree = "<group>"; };
+		AA947435AECBB338DBE3DAC8 /* StanwoodGroupChain.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = StanwoodGroupChain.podspec; path = ../StanwoodGroupChain.podspec; sourceTree = "<group>"; };
 		AFDCAA62FD09137E47B6FCC6 /* Pods_STWGroupChainKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STWGroupChainKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60CECC9CB1475D411FADD9D /* Pods-STWGroupChainKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STWGroupChainKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STWGroupChainKit_Tests/Pods-STWGroupChainKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC0C8DA531C48EDE40E72304 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				AA947435AECBB338DBE3DAC8 /* STWGroupChainKit.podspec */,
+				AA947435AECBB338DBE3DAC8 /* StanwoodGroupChain.podspec */,
 				1A6DB60CAE212E0D0F2E6C3C /* README.md */,
 				EC0C8DA531C48EDE40E72304 /* LICENSE */,
 			);

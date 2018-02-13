@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'STWGroupChainKit'
-  s.version          = '0.0.1'
+  s.name             = 'StanwoodGroupChain'
+  s.version          = '0.1.0'
   s.summary          = 'This is beginning of the GroupChain architecture'
 
 
@@ -17,19 +17,11 @@ This is beginning of the GroupChain architecture
                        DESC
 
   s.homepage         = 'https://github.com/stanwood/STWGroupChainKit'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Tal Zion' => 'talezion@gmail.com' }
-  s.source           = { :git => 'https://github.com/stanwood/STWGroupChainKit.git', :tag => s.version.to_s }
+  s.license          = { :type => 'private', :file => 'LICENSE' }
+  s.author           = { 'Tal Zion' => 'tal.zion@stanwood.io' }
+  s.source           = { :git => 'git@github.com:stanwood/STWGroupChainKit.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'STWGroupChainKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'STWGroupChainKit' => ['STWGroupChainKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
