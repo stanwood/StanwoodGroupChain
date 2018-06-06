@@ -8,10 +8,11 @@
 
 import Foundation
 
-// MARK: - Result
+public typealias ChainResult = GroupChainResult<ChainResponse, ChainError>
 
+// MARK: - Result
 /// An enum representing either a failure with an explanatory error, or a success with a result value.
-public enum ChainResult<T, Error: ChainError>: CustomStringConvertible, CustomDebugStringConvertible {
+public enum GroupChainResult<T: ChainResponse, Error: ChainError>: CustomStringConvertible, CustomDebugStringConvertible {
     case success(T)
     case failure(Error)
     
@@ -29,7 +30,7 @@ public enum ChainResult<T, Error: ChainError>: CustomStringConvertible, CustomDe
     
     /// Constructs a result from an `Optional`, failing with `Error` if `nil`.
     public init(_ value: T?, failWith: @autoclosure () -> Error) {
-        self = value.map(ChainResult.success) ?? .failure(failWith())
+        self = value.map(GroupChainResult.success) ?? .failure(failWith())
     }
     
     // MARK: Deconstruction

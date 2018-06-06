@@ -7,7 +7,11 @@
 //
 
 import Foundation
+import StanwoodGroupChain
 
-struct ModelItem {
+struct ModelItem: ChainResponseType {
     
+    var id: String? {
+        return nil
+    }
 }

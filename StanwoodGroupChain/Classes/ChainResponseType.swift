@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol ChainResponseType {
-    var id: String { get }
+    var id: String? { get }
 }

@@ -21,11 +21,15 @@ class HandlerFive: AbstractHandler {
         /// Use custom userInfo
         let userInfo = element.userInfo
         
-        /// On success
+        /// Return a response if reqruied on success
         let someItem = ModelItem()
-        let successResult: ChainResult = .success(someItem)
+        let response = ChainResponse(object: someItem)
+        let successResult: ChainResult = .success(response)
+        element.resultComplition?(successResult)
         
+        /// Return an error if requried
         let error: ChainError = ChainError(message: "Something went wrong...")
         let failureResult: ChainResult = .failure(error)
+        element.resultComplition?(failureResult)
     }
 }
