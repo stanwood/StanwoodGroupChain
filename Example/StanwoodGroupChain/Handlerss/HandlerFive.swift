@@ -1,6 +1,6 @@
 //
 //  HandlerFive.swift
-//  STWGroupChainKit_Example
+//  StanwoodGroupChain_Example
 //
 //  Created by Tal Zion on 09/10/2017.
 //  Copyright © 2017 CocoaPods. All rights reserved.

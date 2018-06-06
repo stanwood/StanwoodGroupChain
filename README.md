@@ -1,4 +1,4 @@
-# STWGroupChainKit
+# StanwoodGroupChain
 
 ## Example
 
