@@ -45,7 +45,7 @@ public class ChainError: NSError {
         super.init(domain: SGCErrorKey.domain, code: SGCErrorKey.errorCode, userInfo: info)
     }
     
-    convenience init(message: String) {
+    public convenience init(message: String) {
         let info = [SGCErrorInfoKey.NSLocalizedDescriptionKey: message]
         try! self.init(userInfo: info)
     }

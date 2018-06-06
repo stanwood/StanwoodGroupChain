@@ -1,6 +1,6 @@
 //
 //  Chain.swift
-//  Pods-STWGroupChainKit_Example
+//  Pods
 //
 //  Created by Tal Zion on 27/09/2017.
 //

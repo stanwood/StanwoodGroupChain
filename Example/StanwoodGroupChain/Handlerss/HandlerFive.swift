@@ -11,6 +11,14 @@ import StanwoodGroupChain
 
 class HandlerFive: AbstractHandler {
     override func execute(object: ChainElement) {
-        print(id)
+        
+        /// Make a networking call, load from file, run animation and return a result
+        
+        /// On success
+        let someItem = ModelItem()
+        let successResult: ChainResult = .success(someItem)
+        
+        let error: ChainError = ChainError(message: "Something went wrong...")
+        let failureResult: ChainResult = .failure(error)
     }
 }

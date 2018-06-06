@@ -15,16 +15,35 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let handlers = [HandlerOne(), HandlerTwo(), HandlerThree(), HandlerFour(), HandlerFive(), HandlerSix()]
         
+        let handlers = [HandlerOne(), HandlerTwo(), HandlerThree(), HandlerFour(), HandlerFive(), HandlerSix()]
         chain = Chain(handlers: handlers)
         
-        let sgcObject = ChainElement(type: .type(HandlerSix.self), target: self) { (result) in
+        let handlerFour = ChainElement(type: .type(HandlerSix.self), target: self) { (result) in
             
+            switch result {
+            case .failure(let error): print("Handle error, \(error.description)")
+            case .success(let item): print("Handle item, \(item)")
+                
+                /// Call the next handler
+            }
         }
         
-        chain?.handel(sgcObject)
+        let handlerOne = ChainElement(type: .type(HandlerSix.self), target: self) { [weak self, handlerFour = handlerFour] (result) in
+            
+            guard let `self` = self else { return }
+            
+            switch result {
+            case .failure(let error): print("Handle error, \(error.description)")
+            case .success(let item): print("Handle item, \(item)")
+                
+                /// Call the next handler
+                
+                self.chain?.handel(handlerFour)
+            }
+        }
         
+        chain?.handel(handlerOne)
     }
 }
 
