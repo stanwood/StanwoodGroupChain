@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  StanwoodGroupChain
 //
-//  Created by talezion on 06/06/2018.
-//  Copyright (c) 2018 talezion. All rights reserved.
+//  Created by Tal Zion on 06/06/2018.
+//  Copyright (c) 2018 Stanwood GmbH. All rights reserved.
 //
 
 import UIKit

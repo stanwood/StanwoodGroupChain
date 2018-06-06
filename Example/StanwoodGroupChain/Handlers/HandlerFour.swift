@@ -1,16 +1,16 @@
 //
 //  HandlerFour.swift
-//  STWGroupChainKit_Example
+//  StanwoodGroupChain_Example
 //
 //  Created by Tal Zion on 09/10/2017.
-//  Copyright © 2017 CocoaPods. All rights reserved.
+//  Copyright (c) 2018 Stanwood GmbH. All rights reserved.
 //
 
 import Foundation
 import StanwoodGroupChain
 
-class HandlerFour: SGCAbstractHandler {
-    override func execute(object: SGCObject) {
+class HandlerFour: AbstractHandler {
+    override func execute(_ element: ChainElement) {
         print(id)
     }
 }
