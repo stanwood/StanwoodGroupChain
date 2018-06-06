@@ -1,0 +1,6 @@
+framework module StanwoodGroupChain {
+  umbrella header "StanwoodGroupChain-umbrella.h"
+
+  export *
+  module * { export * }
+}

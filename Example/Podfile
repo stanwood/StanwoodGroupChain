@@ -1,11 +1,5 @@
 use_frameworks!
 
-target 'STWGroupChainKit_Example' do
-  pod 'STWGroupChainKit', :path => '../'
-
-  target 'STWGroupChainKit_Tests' do
-    inherit! :search_paths
-
-    
-  end
+target 'StanwoodGroupChain_Example' do
+  pod 'StanwoodGroupChain', :path => '../'
 end

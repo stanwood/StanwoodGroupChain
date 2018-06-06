@@ -1,6 +1,5 @@
-import UIKit
 import XCTest
-import STWGroupChainKit
+import StanwoodGroupChain
 
 class Tests: XCTestCase {
     
