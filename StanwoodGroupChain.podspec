@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'StanwoodGroupChain'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'This is beginning of the GroupChain architecture'
 
 
@@ -16,12 +16,12 @@ Pod::Spec.new do |s|
 This is beginning of the GroupChain architecture
                        DESC
 
-  s.homepage         = 'https://github.com/stanwood/STWGroupChainKit'
-  s.license          = { :type => 'private', :file => 'LICENSE' }
+  s.homepage         = 'https://github.com/stanwood/StanwoodGroupChain'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Tal Zion' => 'tal.zion@stanwood.io' }
-  s.source           = { :git => 'git@github.com:stanwood/STWGroupChainKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com:stanwood/StanwoodGroupChain.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'STWGroupChainKit/Classes/**/*'
+  s.source_files = 'StanwoodGroupChain/Classes/**/*'
 end

@@ -25,4 +25,4 @@ pod "StanwoodGroupChain"
 
 ## License
 
-StanwoodCore is a private lobrary. See the LICENSE file for more info.
+StanwoodCore is under MIT licence. See the LICENSE file for more info.
