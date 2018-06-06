@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = 'StanwoodGroupChain'
   s.version          = '0.1.1'
-  s.summary          = 'This is beginning of the GroupChain architecture'
+  s.summary          = 'This is the beginning of the GroupChain architecture'
 
 
   s.description      = <<-DESC
-This is beginning of the GroupChain architecture
+This is the beginning of the GroupChain architecture
                        DESC
 
   s.homepage         = 'https://github.com/stanwood/StanwoodGroupChain'
