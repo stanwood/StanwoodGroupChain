@@ -50,8 +50,12 @@ class ExampleHandler: AbstractHandler {
 var chain: Chain?
 
 let handlers = [ExampleHandler(), HandlerOne(), HandlerTwo(), HandlerThree(), HandlerFour(), HandlerFive(), HandlerSix()]
-chain = Chain(handlers: handlers)
-        
+chain = Chain(handlers: handlers)  
+```
+
+### Instantiate handler element and handle
+
+```swift
 let handlerFour = ChainElement(type: .type(ExampleHandler.self), target: self) { (result) in
             
    switch result {
@@ -77,7 +81,6 @@ let handlerOne = ChainElement(type: .type(HandlerSix.self), target: self) { [wea
  }
         
 chain?.handel(handlerOne)
-  
 ```
 
 
