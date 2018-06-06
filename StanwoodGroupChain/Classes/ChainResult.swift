@@ -11,7 +11,7 @@ import Foundation
 // MARK: - Result
 
 /// An enum representing either a failure with an explanatory error, or a success with a result value.
-public enum SGCResult<T, Error: SGCError>: CustomStringConvertible, CustomDebugStringConvertible {
+public enum ChainResult<T, Error: ChainError>: CustomStringConvertible, CustomDebugStringConvertible {
     case success(T)
     case failure(Error)
     
@@ -29,7 +29,7 @@ public enum SGCResult<T, Error: SGCError>: CustomStringConvertible, CustomDebugS
     
     /// Constructs a result from an `Optional`, failing with `Error` if `nil`.
     public init(_ value: T?, failWith: @autoclosure () -> Error) {
-        self = value.map(SGCResult.success) ?? .failure(failWith())
+        self = value.map(ChainResult.success) ?? .failure(failWith())
     }
     
     // MARK: Deconstruction

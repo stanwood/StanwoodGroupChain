@@ -9,8 +9,8 @@
 import Foundation
 import StanwoodGroupChain
 
-class HandlerFive: SGCAbstractHandler {
-    override func execute(object: SGCObject) {
+class HandlerFive: AbstractHandler {
+    override func execute(object: ChainElement) {
         print(id)
     }
 }

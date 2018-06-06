@@ -1,5 +1,5 @@
 //
-//  SGCHandlerType.swift
+//  HandlerType.swift
 //  Pods
 //
 //  Created by Tal Zion on 28/07/2017.
@@ -8,24 +8,24 @@
 
 import Foundation
 
-public protocol SGCHandlerType: class {
-    var successor: SGCHandlerType? { get set }
+public protocol HandlerType: class {
+    var successor: HandlerType? { get set }
     var id: String { get }
     
-    func execute(object: SGCObject)
+    func execute(object: ChainElement)
 }
 
-extension SGCHandlerType  {
+extension HandlerType  {
     
-    func set(_ successor: SGCHandlerType) {
+    func set(_ successor: HandlerType) {
         self.successor = successor
     }
     
-    func handel(_ object: SGCObject) {
+    func handel(_ object: ChainElement) {
         initiate(with: object)
     }
     
-    func initiate(type: SGCType = .type(Self.self as AnyClass), with object: SGCObject) {
+    func initiate(type: ChainHandleType = .type(Self.self as AnyClass), with object: ChainElement) {
         ///Check if the current type equals to currentHandler
         switch (type, object.type) {
         case (.type(let SGCType), .type(let toType)):

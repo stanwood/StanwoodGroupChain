@@ -8,18 +8,18 @@
 
 import Foundation
 
-open class SGCAbstractHandler: NSObject, SGCHandlerType {
+open class AbstractHandler: NSObject, HandlerType {
     
-    open var successor: SGCHandlerType?
+    open var successor: HandlerType?
     open var id: String {
         return String(describing: self)
     }
     
-    open func execute(object: SGCObject) {
+    open func execute(object: ChainElement) {
         fatalError("You must overrride me!!!@")
     }
     
-    open static func ==(lhs: SGCAbstractHandler, rhs: SGCAbstractHandler) -> Bool {
+    open static func ==(lhs: AbstractHandler, rhs: AbstractHandler) -> Bool {
         return lhs.id == rhs.id
     }
 }

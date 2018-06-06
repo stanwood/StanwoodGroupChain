@@ -1,5 +1,5 @@
 //
-//  SGCChain.swift
+//  Chain.swift
 //  Pods-STWGroupChainKit_Example
 //
 //  Created by Tal Zion on 27/09/2017.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-open class SGCChain: SGCChainType {
+open class Chain: ChainType {
     
-    public var initialHandler: SGCHandlerType?
+    public var initialHandler: HandlerType?
     
-    public required init(handlers: [SGCAbstractHandler]) {
+    public required init(handlers: [AbstractHandler]) {
         
         initialHandler = handlers.first
         

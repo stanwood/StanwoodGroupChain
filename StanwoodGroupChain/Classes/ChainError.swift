@@ -1,5 +1,5 @@
 //
-//  SGCError.swift
+//  ChainError.swift
 //  Pods
 //
 //  Created by Tal Zion on 28/07/2017.
@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - SGCErrpr types
 
-public class SGCError: NSError {
+public class ChainError: NSError {
     
     private struct SGCErrorKey {
         static let domain = "SGCErrorDomain"
@@ -30,13 +30,13 @@ public class SGCError: NSError {
         }
     }
     
-    public init(userInfo: [SGCError.SGCErrorInfoKey : Any]) throws {
+    public init(userInfo: [ChainError.SGCErrorInfoKey : Any]) throws {
         
         // Converting CGSError userInfo to an NSError userInfo
         var info: [String : Any] = [:]
         for infoItem in userInfo {
             if infoItem.key == .NSLocalizedRecoveryOptionsErrorKey {
-                guard infoItem.value is [String] else { throw SGCError(message: "NSLocalizedRecoveryOptionsErrorKey must be an array of String") }
+                guard infoItem.value is [String] else { throw ChainError(message: "NSLocalizedRecoveryOptionsErrorKey must be an array of String") }
             }
             
             info.updateValue(infoItem.value, forKey: infoItem.key.description)

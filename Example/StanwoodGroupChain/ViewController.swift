@@ -11,17 +11,15 @@ import StanwoodGroupChain
 
 class ViewController: UIViewController {
     
-    var chain: SGCChain?
+    var chain: Chain?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let handlers = [HandlerOne(), HandlerTwo(), HandlerThree(), HandlerFour(), HandlerFive(), HandlerSix()]
         
-        chain = SGCChain(handlers: handlers)
+        chain = Chain(handlers: handlers)
         
-        let vc = UIViewController()
-        
-        let sgcObject = SGCObject(type: .type(HandlerOne.self), target: vc) { (result) in
+        let sgcObject = ChainElement(type: .type(HandlerSix.self), target: self) { (result) in
             
         }
         
