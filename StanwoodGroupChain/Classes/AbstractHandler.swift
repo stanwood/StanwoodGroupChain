@@ -15,7 +15,7 @@ open class AbstractHandler: NSObject, HandlerType {
         return String(describing: self)
     }
     
-    open func execute(object: ChainElement) {
+    open func execute(_ element: ChainElement) {
         fatalError("You must overrride me!!!@")
     }
     

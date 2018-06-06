@@ -11,7 +11,7 @@ import StanwoodGroupChain
 
 class HandlerOne: AbstractHandler {
     
-    override func execute(object: ChainElement) {
+    override func execute(_ element: ChainElement) {
         print(id)
     }
 }

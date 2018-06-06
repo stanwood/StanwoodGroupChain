@@ -12,7 +12,7 @@ public protocol HandlerType: class {
     var successor: HandlerType? { get set }
     var id: String { get }
     
-    func execute(object: ChainElement)
+    func execute(_ element: ChainElement)
 }
 
 extension HandlerType  {
@@ -21,27 +21,26 @@ extension HandlerType  {
         self.successor = successor
     }
     
-    func handel(_ object: ChainElement) {
-        initiate(with: object)
+    func handel(_ element: ChainElement) {
+        initiate(with: element)
     }
     
-    func initiate(type: ChainHandleType = .type(Self.self as AnyClass), with object: ChainElement) {
+    func initiate(type: ChainHandleType = .type(Self.self as AnyClass), with element: ChainElement) {
         ///Check if the current type equals to currentHandler
-        switch (type, object.type) {
-        case (.type(let SGCType), .type(let toType)):
-            switch SGCType == toType {
+        switch (type, element.type) {
+        case (.type(let currentType), .type(let toType)):
+            switch currentType == toType {
             case true:
                 
-                /// MARK: Add logic here
-                // @optional -- uncomment to user target
+                /// Executre handler block
                 
-                execute(object: object)
+                execute(element)
             case false:
                 ///Execute the next handler in the SGC
                 ///IMPORTANT NOTE: In case the current handler is the last in the SGC, force a crash to make sure you handle all types:
                 
                 if successor != nil {
-                    self.successor?.handel(object)
+                    self.successor?.handel(element)
                 } else {
                     fatalError("No handler takes care of me! Make sure to add me to the SGC...")
                 }

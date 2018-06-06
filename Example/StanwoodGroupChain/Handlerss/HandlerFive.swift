@@ -10,9 +10,16 @@ import Foundation
 import StanwoodGroupChain
 
 class HandlerFive: AbstractHandler {
-    override func execute(object: ChainElement) {
+    
+    override func execute(_ element: ChainElement) {
         
         /// Make a networking call, load from file, run animation and return a result
+        
+        /// Access the target
+        let target = element.target
+        
+        /// Use custom userInfo
+        let userInfo = element.userInfo
         
         /// On success
         let someItem = ModelItem()
