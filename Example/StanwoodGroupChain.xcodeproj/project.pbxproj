@@ -13,6 +13,12 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		6C9C98B320C7BC5A00CEDA15 /* HandlerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C98AD20C7BC5A00CEDA15 /* HandlerThree.swift */; };
+		6C9C98B420C7BC5A00CEDA15 /* HandlerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C98AE20C7BC5A00CEDA15 /* HandlerOne.swift */; };
+		6C9C98B520C7BC5A00CEDA15 /* HandlerFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C98AF20C7BC5A00CEDA15 /* HandlerFive.swift */; };
+		6C9C98B620C7BC5A00CEDA15 /* HandlerFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C98B020C7BC5A00CEDA15 /* HandlerFour.swift */; };
+		6C9C98B720C7BC5A00CEDA15 /* HandlerSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C98B120C7BC5A00CEDA15 /* HandlerSix.swift */; };
+		6C9C98B820C7BC5A00CEDA15 /* HandlerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C98B220C7BC5A00CEDA15 /* HandlerTwo.swift */; };
 		DDE32A4F2ED4CEC21E03DAC7 /* Pods_StanwoodGroupChain_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A50F6122BFE5635930472CD /* Pods_StanwoodGroupChain_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +46,12 @@
 		607FACE51AFB9204008FA782 /* StanwoodGroupChain_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StanwoodGroupChain_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		6C9C98AD20C7BC5A00CEDA15 /* HandlerThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandlerThree.swift; sourceTree = "<group>"; };
+		6C9C98AE20C7BC5A00CEDA15 /* HandlerOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandlerOne.swift; sourceTree = "<group>"; };
+		6C9C98AF20C7BC5A00CEDA15 /* HandlerFive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandlerFive.swift; sourceTree = "<group>"; };
+		6C9C98B020C7BC5A00CEDA15 /* HandlerFour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandlerFour.swift; sourceTree = "<group>"; };
+		6C9C98B120C7BC5A00CEDA15 /* HandlerSix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandlerSix.swift; sourceTree = "<group>"; };
+		6C9C98B220C7BC5A00CEDA15 /* HandlerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandlerTwo.swift; sourceTree = "<group>"; };
 		7A50F6122BFE5635930472CD /* Pods_StanwoodGroupChain_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StanwoodGroupChain_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAFBDED8EAE46CE8200D808 /* Pods-StanwoodGroupChain_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanwoodGroupChain_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StanwoodGroupChain_Example/Pods-StanwoodGroupChain_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5F64FF0872280E5B207AE6 /* Pods-StanwoodGroupChain_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanwoodGroupChain_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-StanwoodGroupChain_Example/Pods-StanwoodGroupChain_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +101,7 @@
 		607FACD21AFB9204008FA782 /* Example for StanwoodGroupChain */ = {
 			isa = PBXGroup;
 			children = (
+				6C9C98AC20C7BC4D00CEDA15 /* Handlerss */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -133,6 +146,19 @@
 				4033CFB681D32A2366E942D1 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		6C9C98AC20C7BC4D00CEDA15 /* Handlerss */ = {
+			isa = PBXGroup;
+			children = (
+				6C9C98AF20C7BC5A00CEDA15 /* HandlerFive.swift */,
+				6C9C98B020C7BC5A00CEDA15 /* HandlerFour.swift */,
+				6C9C98AE20C7BC5A00CEDA15 /* HandlerOne.swift */,
+				6C9C98B120C7BC5A00CEDA15 /* HandlerSix.swift */,
+				6C9C98AD20C7BC5A00CEDA15 /* HandlerThree.swift */,
+				6C9C98B220C7BC5A00CEDA15 /* HandlerTwo.swift */,
+			);
+			path = Handlerss;
 			sourceTree = "<group>";
 		};
 		D2C9492C6E3CE869152E370E /* Frameworks */ = {
@@ -299,6 +325,12 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				6C9C98B320C7BC5A00CEDA15 /* HandlerThree.swift in Sources */,
+				6C9C98B820C7BC5A00CEDA15 /* HandlerTwo.swift in Sources */,
+				6C9C98B720C7BC5A00CEDA15 /* HandlerSix.swift in Sources */,
+				6C9C98B420C7BC5A00CEDA15 /* HandlerOne.swift in Sources */,
+				6C9C98B620C7BC5A00CEDA15 /* HandlerFour.swift in Sources */,
+				6C9C98B520C7BC5A00CEDA15 /* HandlerFive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

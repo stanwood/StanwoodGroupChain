@@ -1,5 +1,4 @@
 import XCTest
-import StanwoodGroupChain
 
 class Tests: XCTestCase {
     
