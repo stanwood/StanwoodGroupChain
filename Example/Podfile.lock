@@ -1,16 +1,16 @@
 PODS:
-  - STWGroupChainKit (0.0.1)
+  - StanwoodGroupChain (0.1.1)
 
 DEPENDENCIES:
-  - STWGroupChainKit (from `../`)
+  - StanwoodGroupChain (from `../`)
 
 EXTERNAL SOURCES:
-  STWGroupChainKit:
+  StanwoodGroupChain:
     :path: "../"
 
 SPEC CHECKSUMS:
-  STWGroupChainKit: 0c0a3a62c430c97bb9d7ecf686f5ce371bcd891a
+  StanwoodGroupChain: 4a5af11dac2d7b15b0419dc4ba80fda05ce2e16e
 
-PODFILE CHECKSUM: 6065f16be10b4267b1a173532646628068246ef0
+PODFILE CHECKSUM: d9b8d3b959cede4a7ab14bda3d8a2dda9b967bea
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.5.3

@@ -1,6 +1,4 @@
-import UIKit
 import XCTest
-import STWGroupChainKit
 
 class Tests: XCTestCase {
     
