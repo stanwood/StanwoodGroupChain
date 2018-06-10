@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'StanwoodGroupChain'
-  s.version          = '0.1.1'
+  s.version          = '1.0'
   s.summary          = 'This is the beginning of the GroupChain architecture'
 
 
