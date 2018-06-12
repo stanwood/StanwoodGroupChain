@@ -1,12 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'StanwoodGroupChain'
-  s.version          = '1.0.1'
-  s.summary          = 'This is the beginning of the GroupChain architecture'
+  s.version          = '1.0.2'
+  s.summary          = 'GroupChain architecture groups task'
 
 
-  s.description      = <<-DESC
-This is the beginning of the GroupChain architecture
-                       DESC
+  s.description      = 'GroupChain architecture groups task, and it is managed under the Chain-of-Responsibility design pattern.'
 
   s.homepage         = 'https://github.com/stanwood/StanwoodGroupChain'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
