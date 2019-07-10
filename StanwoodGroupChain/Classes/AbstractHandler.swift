@@ -36,7 +36,7 @@ open class AbstractHandler: NSObject, HandlerType {
         fatalError("You must overrride me!!!@")
     }
     
-    open static func ==(lhs: AbstractHandler, rhs: AbstractHandler) -> Bool {
+    public static func ==(lhs: AbstractHandler, rhs: AbstractHandler) -> Bool {
         return lhs.id == rhs.id
     }
 }
