@@ -1,5 +1,7 @@
 # StanwoodGroupChain
 
+[![Swift Version](https://img.shields.io/badge/Swift-5.0-orange.svg)]()
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
