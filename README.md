@@ -1,5 +1,7 @@
 # StanwoodGroupChain
 
+[![Build Status](https://travis-ci.org/stanwood/StanwoodGroupChain.svg?branch=master)](https://travis-ci.org/stanwood/StanwoodGroupChain)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
