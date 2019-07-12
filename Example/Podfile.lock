@@ -1,5 +1,5 @@
 PODS:
-  - StanwoodGroupChain (1.0)
+  - StanwoodGroupChain (1.0.2)
 
 DEPENDENCIES:
   - StanwoodGroupChain (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  StanwoodGroupChain: 13604a70819488870b75c1f2d2360f1c69d2e00f
+  StanwoodGroupChain: 99f9ed1c2e085d88f02ef66d66b09fecddae7390
 
 PODFILE CHECKSUM: d9b8d3b959cede4a7ab14bda3d8a2dda9b967bea
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.3
