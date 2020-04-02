@@ -91,3 +91,4 @@ chain?.handel(handlerOne)
 ## License
 
 StanwoodCore is under MIT licence. See the LICENSE file for more info.
+
